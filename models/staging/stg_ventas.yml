@@ -1,0 +1,9 @@
+models:
+  - name: stg_ventas
+    description: info de ventas
+    columns:
+      - name: customer_id
+        description: The unique key for each customer.
+        data_tests:
+          - not_null
+          

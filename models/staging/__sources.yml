@@ -1,0 +1,9 @@
+version: 2
+
+# Try using these source definitions instead!
+sources:
+  - name: ventas
+    database: greenco-db   # GCP project
+    schema: TEST           # dataset
+    tables:
+      - name: ventas

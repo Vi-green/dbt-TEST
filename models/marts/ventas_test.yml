@@ -1,0 +1,13 @@
+models:
+  - name: ventas_test
+    description: test de ventas
+    data_tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "lifetime_spend_pretax + lifetime_tax_paid = lifetime_spend"
+    columns:
+      - name: customer_id
+        description: unique customer id
+        data_tests:
+          - not_null
+          
