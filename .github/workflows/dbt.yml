@@ -30,6 +30,9 @@ jobs:
       - name: Install dbt BigQuery
         run: pip install dbt-bigquery
 
+      - name: Install dbt dependencies
+        run: dbt deps
+
       - name: Create credentials file
         run: |
           echo '${{ secrets.GCP_SERVICE_ACCOUNT }}' > keyfile.json
