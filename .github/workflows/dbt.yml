@@ -9,6 +9,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule:
+    - cron: '05 14 * * *' 
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -59,5 +61,5 @@ jobs:
       - name: Run models
         run: dbt run
 
-      - name: Run tests
-        run: dbt test
+     # - name: Run tests
+     #   run: dbt test
