@@ -38,7 +38,7 @@ jobs:
         run: |
           mkdir -p ~/.dbt
           cat <<EOF > ~/.dbt/profiles.yml
-          my_bigquery_project:
+          jaffle_shop_1:
             target: dev
             outputs:
               dev:
