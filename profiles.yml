@@ -9,3 +9,4 @@ jaffle_shop_1:
       method: oauth
       location: US
       dataproc_batch: null
+      timeout_seconds: 300
