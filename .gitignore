@@ -1,7 +1,6 @@
 dbt_packages/
 dbt_internal_packages/
 logs/
-target/
 .env
 *.json
 __pycache__/
