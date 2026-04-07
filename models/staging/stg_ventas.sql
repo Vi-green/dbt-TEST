@@ -15,7 +15,7 @@ renamed as (
         cod_cliente as customer_id,
 
         ---------- text
-        cliente as customer_name
+        cliente as nombre_fantasia
 
     from source
 
