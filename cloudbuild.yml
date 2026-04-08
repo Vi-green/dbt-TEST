@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/greenco-db/dbt-test', '.']
+
+images:
+  - 'gcr.io/greenco-db/dbt-test'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
