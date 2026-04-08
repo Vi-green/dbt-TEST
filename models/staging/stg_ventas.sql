@@ -15,7 +15,7 @@ renamed as (
         cod_cliente as customer_id,
 
         ---------- text
-        cliente as nombre_fantasia /*por favor que me lo comitee, que le pasa a esa pelona? Intento sin build automatico*/
+        cliente as nombre_fantasia_test /*por favor que me lo comitee, que le pasa a esa pelona? Intento sin build automatico*/
 
     from source
 
