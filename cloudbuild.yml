@@ -2,6 +2,14 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'us-central1-docker.pkg.dev/greenco-db/dbt-test/dbt-test', '.']
 
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      [
+        'run', 'jobs', 'deploy', 'dbt-test',
+        '--image', 'us-central1-docker.pkg.dev/greenco-db/dbt-test/dbt-test',
+        '--region', 'us-central1'
+      ]
 images:
   - 'us-central1-docker.pkg.dev/greenco-db/dbt-test/dbt-test'
 

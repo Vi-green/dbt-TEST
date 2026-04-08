@@ -13,7 +13,7 @@ renamed as (
         cod_cliente as customer_id,
 
         ---------- text
-        cliente as nombre_fantasia_test_2_letitbeee 
+        cliente as nombre_fantasia_test_yml
     from source
 
 )
